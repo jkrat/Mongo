@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quoting Dojo</title>
+</head>
+<body>
+    <a href="/">home</a>
+    <h1>Quotes</h1>
+    <ul>
+    <% for (var each in quotes) { %>
+        <li><%= quotes[each].content %></li>
+        <li><%= quotes[each].writer %></li>
+    <% } %>
+    </ul>
+</body>
+</html>
