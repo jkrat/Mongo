@@ -3,7 +3,7 @@ var app = express();
 let port = 8000;
 
 var bodyParser = require('body-parser');
-var session = require('express-session')
+var session = require('express-session');
 var mongoose = require('mongoose');
 
 app.use(bodyParser.urlencoded({extended: true}));

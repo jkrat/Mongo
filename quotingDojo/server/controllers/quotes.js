@@ -1,4 +1,6 @@
 
+Quote = require('../models/quote.js');
+
 module.exports = {
     index: function(req, res) {
     	res.render('index.ejs');

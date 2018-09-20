@@ -1,7 +1,5 @@
 
-const mongoose = require('mongoose'),
-    Quote = mongoose.model('Quote'),
-    quotes = require('./server/controllers/quotes.js')
+const quotes = require('./server/controllers/quotes.js')
 
 module.exports = function(app){
     app.get('/', function(req, res) {
@@ -15,5 +13,9 @@ module.exports = function(app){
     app.post('/newQuote', function(req, res) {
         quotes.newQuote(req, res);
     });
+
+    app.listen(8000, function() {
+        console.log("listening on port 8000");
+      })
 };
 
